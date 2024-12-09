@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Links Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #fbc2eb);
+            background-size: 300% 300%;
+            filter: blur(20px);
+            animation: moveBackground 8s infinite linear;
+            z-index: -1;
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            width: 90%; /* 默认宽度 */
+            max-width: 700px; /* 桌面端的固定宽度 */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .link-item:last-child {
+            border-bottom: none;
+        }
+
+        .icon {
+            flex: 0 0 40px; /* 桌面端图标大小 */
+            height: 40px;
+            margin-right: 15px;
+            background-color: #a18cd1;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 50%;
+        }
+
+        .url {
+            flex: 1; /* 链接占据剩余宽度 */
+            font-size: 16px;
+            color: #000;
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        .url:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%; /* 手机端框占满屏幕宽度 */
+                padding: 10px; /* 减少内边距 */
+                border-radius: 8px; /* 圆角变小 */
+            }
+
+            .link-item {
+                flex-wrap: wrap; /* 启用换行 */
+            }
+
+            .icon {
+                flex: 0 0 30px; /* 图标更小 */
+                height: 30px;
+                font-size: 12px;
+                margin-right: 8px;
+            }
+
+            .url {
+                font-size: 14px; /* 手机端文字小些 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="link-item">
+            <div class="icon">1</div>
+            <a class="url" href="https://johor.sinchew.com.my/news/20201202/johor/3072168" target="_blank">https://johor.sinchew.com.my/news/20201202/johor/3072168</a>
+        </div>
+        <div class="link-item">
+            <div class="icon">2</div>
+            <a class="url" href="https://hellodoktor.com/kehamilan/tips-hamil/masalah-kehamilan/pengguguran-janin/#punca" target="_blank">https://hellodoktor.com/kehamilan/tips-hamil/masalah-kehamilan/pengguguran-janin/#punca</a>
+        </div>
+        <div class="link-item">
+            <div class="icon">3</div>
+            <a class="url" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2563289/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC2563289/</a>
+        </div>
+        <div class="link-item">
+            <div class="icon">4</div>
+            <a class="url" href="https://reproductiverights.org/maps/provision/malaysias-abortion-provisions/" target="_blank">https://reproductiverights.org/maps/provision/malaysias-abortion-provisions/</a>
+        </div>
+        <div class="link-item">
+            <div class="icon">5</div>
+            <a class="url" href="https://prpm.dbp.gov.my/cari1?keyword=konservatif" target="_blank">https://prpm.dbp.gov.my/cari1?keyword=konservatif</a>
+        </div>
+        <div class="link-item">
+            <div class="icon">6</div>
+            <a class="url" href="https://www.greelane.com/ms/kemanusiaan/falsafah/liberalism-2670740/#google_vignette" target="_blank">https://www.greelane.com/ms/kemanusiaan/falsafah/liberalism-2670740/#google_vignette</a>
+        </div>
+        <div class="link-item">
+            <div class="icon">7</div>
+            <a class="url" href="https://kumparan.com/berita-hari-ini/konsep-tuhan-dalam-agama-buddha-dan-pokok-ajarannya-1yfmCUS5q6G/1" target="_blank">https://kumparan.com/berita-hari-ini/konsep-tuhan-dalam-agama-buddha-dan-pokok-ajarannya-1yfmCUS5q6G/1</a>
+        </div>
+        <div class="link-item">
+            <div class="icon">8</div>
+            <a class="url" href="https://www.liputan6.com/hot/read/5294649/karma-adalah-hukum-sebab-akibat-simak-penjelasannya-di-ajaran-hindu-dan-buddha#:~:text=Dalam%20tiap%20ajaran%20agama%2C%20setiap,ini%20atau%20di%20masa%20depan." target="_blank">https://www.liputan6.com/hot/read/5294649/karma...</a>
+        </div>
+        <div class="link-item">
+            <div class="icon">9</div>
+            <a class="url" href="https://www.lionsroar.com/ask-the-teachers-30/" target="_blank">https://www.lionsroar.com/ask-the-teachers-30/</a>
+        </div>
+        <div class="link-item">
+            <div class="icon">10</div>
+            <a class="url" href="https://www.chinapress.com.my/20231020/%E5%85%A8%E9%9D%A2%E6%80%A7%E6%95%99%E8%82%B2%E5%87%8F%E6%84%8F%E5%A4%96%E6%80%80%E5%AD%95-%E6%9C%89%E5%8A%A9%E9%81%8F%E5%88%B6%E5%9B%BD%E5%86%85%E5%BC%83%E5%A9%B4%E8%AF%BE%E9%A2%98/" target="_blank">https://www.chinapress.com.my/20231020...</a>
+        </div>
+        <div class="link-item">
+            <div class="icon">11</div>
+            <a class="url" href="https://www.kpwkm.gov.my/kpwkm/uploads/files/TextUcapan/Ucapan%20YB%20Menteri/2019/Final%20Teks%20Ucapan%20Pelancaran%20Kempen%20Save%20a%20Life.pdf" target="_blank">https://www.kpwkm.gov.my/kpwkm/uploads...</a>
+        </div>
+        <div class="link-item">
+            <div class="icon">12</div>
+            <a class="url" href="https://www.sinarharian.com.my/article/188216/berita/semasa/buang-bayi-perlu-undang-undang-lebih-berat" target="_blank">https://www.sinarharian.com.my/article...</a>
+        </div>
+    </div>
+</body>
+</html>
